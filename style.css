@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --MainGray: #EEEEEE;
+    --FontGray: #A8A8A8;
+    --BorderOrange: #FF3D00;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--MainGray);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 95%;
+    height: 95%;
+    background-color: #EEEEEE;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: repeat(4 , 1fr);
+}
+
+.flex {
+
+    font-size: .8em;
+    padding: 20px;
+    background-color: white;
+
+}
+
+.flex:hover {
+    border-bottom: 3px solid var(--BorderOrange);
+    transform: scale(1.05);
+    transition: .5s ease-in-out;
+}
+
+
+.flex span {
+    display: block;
+    margin: 5px 0px 5px 0px;
+    color: var(--FontGray);
+    padding: 5px;
+    font-size: 1.3em;
+ 
+    
+}
+
+.flex p {
+    display: block;
+    margin-top: 20px;
+}
+
+.b {
+    background-color: black;
+    color: white;
+}
+
+.container .osama {
+    grid-column: 1 / span 2;
+    grid-row: span 1;
+}
+
+.container .ahmed {
+    grid-area: 3 / span 1 1 / span 1;
+
+}
+
+.container .shady {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 3;
+}
+
+.container .mohamed_i {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 2;
+}
+
+.container .mahmoud {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+}
+
+.container .ezz {
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 1;
+}
+
+.container .mohamed_s {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+}
+
+.container .ibrahim {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1;
+}
+
+.container .gamal {
+    grid-column: 3 / span 1;
+    grid-row: 4 / span 1;
+}
+
+.container .eman {
+    grid-column: 4 / span 1;
+    grid-row: 4 / span 1;
+}
